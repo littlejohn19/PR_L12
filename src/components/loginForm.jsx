@@ -11,6 +11,11 @@ class LoginForm extends Component {
         errors: {}
     };
 
+    handleChangeRoute = () => {
+        this.props.history.push('/');
+        window.location.reload();
+    };
+
     validate = () => {
         const errors = {};
 
